@@ -22,7 +22,7 @@
          error_reporting(0);
          $host = ADDSLASHES($_REQUEST['host']); 
          $g_name = gethostbyname($host);
-         $lista_p = range(0,80);
+         $lista_p = range(0,65536);
          $arm_p = array();
          foreach($lista_p as $test_p){
          $s = socket_create(AF_INET, SOCK_STREAM, 0);
